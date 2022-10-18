@@ -1,6 +1,3 @@
-<div align="center">
-<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
-</div>
 
 # Checkout Responsive
 Construye un flujo efectivo y funcional para la compra de todo tipo de productos.
