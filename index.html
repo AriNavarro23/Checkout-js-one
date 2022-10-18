@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Checkout Responsive</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="content">
+        <div class="wrapper">
+            <div class="container">
+                <section class="details-order-content">
+                    <div class="section-icon-back">
+                        <img class="icon-back" src="./icons/chevron-left.svg" alt="icon-back">
+                    </div>
+                    <div class="card-order-page">
+                        <p class="section-account text-primary">Cuenta</p>
+                        <div class="icon-check"></div>
+                        <p class="section-send">Envió</p>
+                        <div class="icon-check"></div>
+                        <p class="section-pay">Pago</p>
+                    </div>
+                    <div class="card-order details-account">
+                        <h3 class="title-card">Detalles de la cuenta</h3>
+                        <form class="form-details-account">
+                            <div class="personal-information">
+                                <div class="content-input">
+                                    <label for="email">Correo electronico</label>
+                                    <input type="email" name="email" id="email" disabled required>
+                                    <div class="result">
+                                        <span class="resultEmail"></span>
+                                    </div>
+                                </div>
+                                <div class="content-input">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" name="password" id="password" disabled required>
+                                    <div class="result">
+                                        <span class="resultPassword"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-login-button">
+                                <div class="content-button">
+                                    <button class="btn btn-register">Registrarse</button>
+                                    <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="content-details-button">
+                            <div class="content-button">
+                                <button class="btn btn-cancel">Cancelar orden</button>
+                                <button class="btn btn-details-send">Detalles de envió</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-order details-send">
+                        <h3 class="title-card">Detalles de envió</h3>
+                        <div class="personal-information">
+                            <div class="content-input">
+                                <label for="numberAddress">Primera línea de dirección</label>
+                                <input type="text" name="numberAddress" id="numberAddress" required>
+                                <div class="result">
+                                    <span class="resultnumberAddress"></span>
+                                </div>
+                            </div>
+                            <div class="content-input">
+                                <label for="address">Nombre de la calle</label>
+                                <input type="text" name="address" id="address" required>
+                                <div class="result">
+                                    <span class="resultAddress"></span>
+                                </div>
+                            </div>
+                            <div class="content-input">
+                                <label for="zipcode">Código postal</label>
+                                <input type="text" name="zipcode" id="zipcode" required>
+                                <div class="result">
+                                    <span class="resultZipcode"></span>
+                                </div>
+                            </div>
+                            <div class="content-button">
+                                <button class="btn btn-cancel">Cancelar orden</button>
+                                <button type="submit" class="btn btn-continue-pay">Continuar al pago</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-order details-pay">
+                        <h3 class="title-card">Detalles del pago</h3>
+                        <div class="personal-information">
+                            <div class="content-input">
+                                <label for="nameCreditCard">Nombre en la tarjeta</label>
+                                <input type="text" name="nameCreditCard" id="nameCreditCard" required>
+                                <div class="result">
+                                    <span class="resultNameCreditCard"></span>
+                                </div>
+                            </div>
+                            <div class="content-input">
+                                <label for="numberCreditCard">Número de tarjeta</label>
+                                <input type="text" name="numberCreditCard" id="numberCreditCard" maxlength="19" required>
+                                <div class="result">
+                                    <span class="resultNumberCreditCard"></span>
+                                </div>
+                            </div>
+                            <div class="extra-information-credit-card">
+                                <div class="extra-information-date">
+                                    <div class="content-input">
+                                        <label for="month">Mes</label>
+                                        <input type="text" name="month" id="month" maxlength="2" required>
+                                        <div class="result">
+                                            <span class="resultMonth"></span>
+                                        </div>
+                                    </div>
+                                    <span>/</span>
+                                    <div class="content-input">
+                                        <label for="year">Año</label>
+                                        <input type="text" name="year" id="year" maxlength="2" required>
+                                        <div class="result">
+                                            <span class="resultYear"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-input">
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" name="cvc" id="cvc" maxlength="3" required>
+                                    <div class="result">
+                                        <span class="resultCVC"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-button">
+                                <button class="btn btn-cancel">Cancelar orden</button>
+                                <button class="btn btn-pay-order">Pagar ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="summary-order-content">
+                    <div class="card-summary">
+                        <h3 class="title-card">Resumen de la Orden</h3>
+                        <div class="container-product-img">
+                            <img src="./images/Macbook.png" alt="mackbook-img">
+                        </div>
+                        <div class="content-product-information">
+                            <div class="content-product-name-price">
+                                <h3 class="title-product">MacBook Pro 14”</h3>
+                                <p class="subtitle-20bold">$52,999.00</p>
+                            </div>
+                            <div class="content-product-count">
+                                <button class="btn-option-product btn-minus" disabled><img src="./icons/Minus.svg"
+                                        alt="icon-minus"></button>
+                                <span class="count-product-value">1</span>
+                                <button class="btn-option-product btn-add"><img src="./icons/add-line.svg"
+                                        alt="icon-add"></button>
+                            </div>
+                        </div>
+                        <div class="content-amount">
+                            <div class="d-flex sub-total">
+                                <p class="body-18medium text-grey">Sub Total</p>
+                                <span class="subtotal-value-product subtitle-20medium">52999</span>
+                            </div>
+                            <div class="d-flex type-send">
+                                <p class="body-18medium text-grey">Envio</p>
+                                <span class="subtitle-20medium text-primary ">Gratis</span>
+                            </div>
+                            <div class="d-flex total">
+                                <p class="subtitle-20bold text-grey">Total</p>
+                                <span class="total-value-product subtitle-20medium">52999</span>
+                            </div>
+                        </div>
+                        <div class="content-product-cupon">
+                            <span class="label-value-cupon body-16medium text-grey" id="value-cupon">Tarjeta de regalo /
+                                código de descuento</span>
+                            <div class="product-cupon">
+                                <div class="content-input-cupon">
+                                    <input type="text" name="value-cupon" class="value-cupon" id="label-value-cupon">
+                                </div>
+                                <button class="btn btn-aplicate-cupon">Aplicar</button>
+                            </div>
+                        </div>
+                        <div class="content-characteristic information-processor">
+                            <h3 class="title-content">Sistema en chip (procesador)</h3>
+                            <section class="selection-option">
+                                <input type="radio" id="8N" name="input-radio-processor" class="input-radio" value="0">
+                                <label for="8N" class="selection-option-label first-option" aria-selected="true">
+                                    <p class="form-selection-description">
+                                        Chip M1 Pro de Apple con CPU de 8 núcleos, GPU de 14 núcleos y Neural Engine de
+                                        16 núcleos
+                                    </p>
+                                </label>
+                            </section>
+                            <section class="selection-option">
+                                <input type="radio" id="10N" name="input-radio-processor" class="input-radio" value="5500">
+                                <label for="10N" class="selection-option-label second-option">
+                                    <p class="form-selection-description">Chip M1 Pro de Apple con CPU de 10 núcleos,
+                                        GPU de 14 núcleos y Neural Engine de 16 núcleos
+                                    </p>
+                                    <span class="span-value"></span>
+                                </label>
+                            </section>
+                            <section class="selection-option">
+                                <input type="radio" id="10NPlus" name="input-radio-processor" class="input-radio" value="8000">
+                                <label for="10NPlus" class="selection-option-label third-option">
+                                    <p class="form-selection-description">
+                                        Chip M1 Pro de Apple con CPU de 10 núcleos, GPU de 16 núcleos y Neural Engine de
+                                        16 núcleos
+                                    </p>
+                                    <span class="span-value"></span>
+                                </label>
+                            </section>
+                        </div>
+                        <div class="content-characteristic information-storage">
+                            <h3 class="title-content">Almacenamiento</h3>
+                            <section class="selection-option">
+                                <input type="radio" id="512GB" name="input-radio-storage" class="input-radio" value="0">
+                                <label for="512GB" class="selection-option-label first-option">
+                                    <p class="form-selection-description">
+                                        Almacenamiento SSD de 512 GB
+                                    </p>
+                                </label>
+                            </section>
+                            <section class="selection-option">
+                                <input type="radio" id="1TB" name="input-radio-storage" class="input-radio" value="5500">
+                                <label for="1TB" class="selection-option-label second-option">
+                                    <p class="form-selection-description">
+                                        Almacenamiento SSD de 1 TB
+                                    </p>
+                                    <span class="span-value"></span>
+                                </label>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="pay-section">
+            <section class="pay-confirm-content">
+                <div class="pay-container">
+                    <figure class="figure-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" class="figure-width" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12ZM18.073 8.929L11.003 16L6.76 11.757L8.174 10.343L11.003 13.172L16.659 7.515L18.073 8.929Z"
+                                fill="#066952" />
+                        </svg>
+                        <figcaption class="subtitile-figure">¡Pago completado!</figcaption>
+                    </figure>
+                    <div class="button-container">
+                        <button class="btn btn-continue">Seguir Comprando</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
